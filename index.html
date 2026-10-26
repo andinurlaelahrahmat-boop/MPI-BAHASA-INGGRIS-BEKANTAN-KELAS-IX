@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MPI Bahasa Inggris – Report Text: Bekantan</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">🐒</span><div><b>Report Text: The Proboscis Monkey</b><small>Media Pembelajaran Interaktif Bahasa Inggris</small></div></div>
+  <div class="who" id="who"></div>
+</header>
+<nav id="nav" aria-label="Menu"></nav>
+<div class="bar"><i id="bar"></i></div>
+<main id="app">
+
+<section id="start" class="panel">
+  <div class="hero">
+    <h1>Bekantan, the monkey with the famous nose</h1>
+    <p>Pelajari cara membuat <b>report text</b> melalui satwa khas Kalimantan. Kerjakan menu dari kiri ke kanan.</p>
+  </div>
+  <h2>Tujuan Pembelajaran</h2>
+  <ul>
+    <li>Menjelaskan tujuan, struktur, dan ciri kebahasaan report text.</li>
+    <li>Mengidentifikasi bagian-bagian report text tentang bekantan.</li>
+    <li>Menyusun report text sederhana dengan simple present tense.</li>
+  </ul>
+  <h2>Identitas Peserta Didik</h2>
+  <p><input id="name" placeholder="Nama lengkap" autocomplete="name"> <input id="cls" placeholder="Kelas"></p>
+  <button class="btn" id="go">Mulai belajar</button>
+</section>
+
+<section id="apersepsi" class="panel" hidden>
+  <h1>Apersepsi</h1>
+  <p>Buka petunjuk satu per satu, lalu tebak hewan apa yang sedang dibicarakan.</p>
+  <div class="clues">
+    <button class="clue" data-t="It lives in mangrove forests along the rivers of Borneo.">Petunjuk 1</button>
+    <button class="clue" data-t="The male has a very big, fleshy nose and a round belly.">Petunjuk 2</button>
+    <button class="clue" data-t="It is the mascot of South Kalimantan and is also called the “Dutch monkey”.">Petunjuk 3</button>
+  </div>
+  <p id="clueOut" class="note">Klik petunjuk di atas.</p>
+  <p><button class="btn alt" id="reveal">Tebakan saya: Bekantan!</button></p>
+  <div id="revealOut" class="note ok" hidden>Benar. <b>Bekantan</b> (<i>Nasalis larvatus</i>) hanya hidup di Pulau Borneo dan berstatus <b>Endangered</b>. Kamu baru saja membaca tiga kalimat yang merupakan potongan <b>report text</b>.</div>
+  <h2>Diskusikan</h2>
+  <ol><li>Apa yang kamu ketahui tentang bekantan?</li><li>Informasi apa yang dibutuhkan agar orang lain mengenal hewan ini?</li><li>Apakah teks yang menjelaskan fakta umum sama dengan cerita? Mengapa?</li></ol>
+</section>
+
+<section id="pretest" class="panel" hidden><h1>Asesmen Awal</h1><p>Jawab tanpa membuka materi. Hasilnya dipakai untuk melihat kemajuanmu.</p><div id="preBox"></div></section>
+
+<section id="materi" class="panel" hidden>
+  <h1>Materi Pokok</h1>
+  <div class="tabs" id="mtabs"></div>
+  <div class="mpane" data-m="0">
+    <h2>What is a report text?</h2>
+    <p>Report text adalah teks yang menyampaikan informasi tentang sesuatu <b>apa adanya</b>, berdasarkan pengamatan dan penelitian, misalnya tentang hewan, tumbuhan, tempat, atau benda.</p>
+    <p class="note"><b>Social function:</b> to present factual information about a subject in general, not about one particular thing.</p>
+    <p>Contoh: teks tentang <i>bekantan pada umumnya</i> adalah report text; cerita tentang <i>bekantan bernama Beki</i> bukan.</p>
+  </div>
+  <div class="mpane" data-m="1" hidden>
+    <h2>Generic structure</h2>
+    <div class="steps">
+      <div><b>1. General classification</b><span>Memperkenalkan subjek dan mengelompokkannya (jenis, famili, asal).</span></div>
+      <div><b>2. Description</b><span>Merinci ciri: bagian tubuh, ukuran, warna, makanan, kebiasaan, habitat. Dapat terdiri dari beberapa paragraf.</span></div>
+    </div>
+    <p class="note">Pada materi ini deskripsi dipisah menjadi <b>Description</b> (ciri fisik) dan <b>Habitat &amp; behavior</b> (tempat hidup dan perilaku).</p>
+  </div>
+  <div class="mpane" data-m="2" hidden>
+    <h2>Language features</h2>
+    <table>
+      <tr><th>Ciri</th><th>Contoh dari teks bekantan</th></tr>
+      <tr><td>Simple present tense</td><td>The proboscis monkey <u>lives</u> in mangrove forests.</td></tr>
+      <tr><td>General nouns (bentuk jamak)</td><td><u>Proboscis monkeys</u> are good swimmers.</td></tr>
+      <tr><td>Technical terms</td><td>primate, mangrove, endemic, folivore</td></tr>
+      <tr><td>Relating verbs (is, are, has, have)</td><td>An adult male <u>has</u> a large nose.</td></tr>
+      <tr><td>Objective, tanpa opini pribadi</td><td>Males can weigh up to 24 kg. (bukan: <s>I think they are funny</s>)</td></tr>
+    </table>
+  </div>
+  <div class="mpane" data-m="3" hidden>
+    <h2>Model text</h2>
+    <article class="model">
+      <h3>The Proboscis Monkey</h3>
+      <p data-l="General classification"><b>The proboscis monkey</b> (<i>Nasalis larvatus</i>), known in Indonesia as <b>bekantan</b>, is a primate of the family Cercopithecidae. It is endemic to the island of Borneo and is the mascot of South Kalimantan.</p>
+      <p data-l="Description">An adult male has a very large, fleshy nose that can hang over its mouth, while the female's nose is smaller and pointed. Its fur is reddish-brown on the back and light grey on the limbs and tail. Males can weigh up to 24 kilograms, almost twice as heavy as females. The round belly holds a large stomach for digesting leaves.</p>
+      <p data-l="Habitat &amp; behavior">Proboscis monkeys live in mangrove forests, swamps, and along riverbanks. They are excellent swimmers because their feet are partly webbed. They eat mainly leaves, unripe fruits, and seeds, and live in groups led by one dominant male. Because of habitat loss, the species is listed as Endangered.</p>
+    </article>
+    <p class="note">Label di sisi kiri paragraf menunjukkan bagian struktur teks.</p>
+  </div>
+  <div class="mpane" data-m="4" hidden>
+    <h2>Glossary</h2>
+    <table>
+      <tr><th>English</th><th>Indonesia</th></tr>
+      <tr><td>primate</td><td>primata</td></tr><tr><td>endemic</td><td>endemik (hanya ada di satu wilayah)</td></tr>
+      <tr><td>mangrove</td><td>hutan bakau</td></tr><tr><td>riverbank</td><td>tepi sungai</td></tr>
+      <tr><td>webbed feet</td><td>kaki berselaput</td></tr><tr><td>dominant male</td><td>pejantan dominan</td></tr>
+      <tr><td>habitat loss</td><td>hilangnya habitat</td></tr><tr><td>endangered</td><td>terancam punah</td></tr>
+    </table>
+  </div>
+  <p class="pager"><button class="btn alt" id="mprev">Sebelumnya</button> <button class="btn alt" id="mnext">Berikutnya</button></p>
+</section>
+
+<section id="simulasi" class="panel" hidden>
+  <h1>Simulasi</h1>
+  <h2>Misi 1: Susun report text</h2>
+  <p>Tentukan bagian struktur untuk setiap kalimat.</p>
+  <div id="sim1"></div>
+  <p><button class="btn" id="chk1">Periksa Misi 1</button> <span id="res1" class="res"></span></p>
+  <h2>Misi 2: Lengkapi dengan bentuk yang tepat</h2>
+  <p>Pilih bentuk simple present yang benar.</p>
+  <div id="sim2" class="cloze"></div>
+  <p><button class="btn" id="chk2">Periksa Misi 2</button> <span id="res2" class="res"></span></p>
+</section>
+
+<section id="kuis" class="panel" hidden><h1>Kuis</h1><p>Jawaban langsung diperiksa. Baca penjelasannya.</p><div id="kuisBox"></div></section>
+<section id="posttest" class="panel" hidden><h1>Asesmen Akhir</h1><p>Kerjakan secara mandiri. Nilai akan dibandingkan dengan asesmen awal.</p><div id="postBox"></div></section>
+
+<section id="refleksi" class="panel" hidden>
+  <h1>Refleksi</h1>
+  <div id="summary" class="note"></div>
+  <h2>Seberapa yakin kamu sekarang?</h2>
+  <div id="likert"></div>
+  <h2>Tulis refleksimu</h2>
+  <p><label>Hal baru yang saya pelajari<textarea id="r1" rows="2"></textarea></label></p>
+  <p><label>Bagian yang masih sulit bagi saya<textarea id="r2" rows="2"></textarea></label></p>
+  <p><label>Rencana saya selanjutnya<textarea id="r3" rows="2"></textarea></label></p>
+  <p><button class="btn" id="dl">Unduh hasil (.txt)</button> <button class="btn alt" id="reset">Ulangi dari awal</button></p>
+</section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
